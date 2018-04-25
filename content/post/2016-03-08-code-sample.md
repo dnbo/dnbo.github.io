@@ -7,7 +7,7 @@ tags:
 - code
 
 ---
-Trying to publish something from Forestry!
+Hej från Castle Coding!
 
 The following are two code samples using syntax highlighting.
 
