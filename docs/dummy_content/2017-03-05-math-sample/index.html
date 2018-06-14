@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Blog is live!</title>
-  <meta property="og:title" content="Blog is live!" />
-  <meta name="twitter:title" content="Blog is live!" />
-  <meta name="description" content="Let&#39;s get this started!">
-  <meta property="og:description" content="Let&#39;s get this started!">
-  <meta name="twitter:description" content="Let&#39;s get this started!">
+  <title>Math Sample</title>
+  <meta property="og:title" content="Math Sample" />
+  <meta name="twitter:title" content="Math Sample" />
+  <meta name="description" content="Using KaTeX">
+  <meta property="og:description" content="Using KaTeX">
+  <meta name="twitter:description" content="Using KaTeX">
   <meta name="author" content="Daniel Borg"/>
   <link href='https://dnbo.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://dnbo.github.io/img/avatar.png" />
@@ -18,12 +18,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@username" />
   <meta name="twitter:creator" content="@username" />
-  <meta property="og:url" content="https://dnbo.github.io/post/2018-06-14-blog-is-live/" />
+  <meta property="og:url" content="https://dnbo.github.io/dummy_content/2017-03-05-math-sample/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Daniel Borg" />
 
   <meta name="generator" content="Hugo 0.38.2" />
-  <link rel="canonical" href="https://dnbo.github.io/post/2018-06-14-blog-is-live/" />
+  <link rel="canonical" href="https://dnbo.github.io/dummy_content/2017-03-05-math-sample/" />
   <link rel="alternate" href="https://dnbo.github.io/index.xml" type="application/rss+xml" title="Daniel Borg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -166,27 +166,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="post-heading">
-              <h1>Blog is live!</h1>
+            <div class="dummy_content-heading">
+              <h1>Math Sample</h1>
                 
                   
-                    <h2 class="post-subheading">Let&#39;s get this started!</h2>
+                    <h2 class="dummy_content-subheading">Using KaTeX</h2>
                   
                 
-                
-                  <span class="post-meta">
-  
-  
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on June 14, 2018
-  
-  
-  &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 1 minutes (11 words)
-  
-  
-</span>
-
-
                 
             </div>
           </div>
@@ -201,14 +187,48 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Let&rsquo;s get this going! Test! Again!
-This time it must work!?</p>
+        <p>KaTeX can be used to generate complex math formulas server-side.</p>
 
+<p>$$
+\phi = \frac{(1+\sqrt{5})}{2} = 1.6180339887\cdots
+$$</p>
+
+<p>Additional details can be found on <a href="https://github.com/Khan/KaTeX">GitHub</a> or on the <a href="http://tiddlywiki.com/plugins/tiddlywiki/katex/">Wiki</a>.
+</p>
+
+<h3 id="example-1">Example 1</h3>
+
+<p>If the text between $$ contains newlines it will rendered in display mode:</p>
+<div class="highlight"><pre class="chroma">$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+$$</pre></div>
+<p>$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+$$</p>
+
+<h3 id="example-2">Example 2</h3>
+<div class="highlight"><pre class="chroma">$$
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+$$</pre></div>
+<p>​​$$
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+$$
+​​</p>
+
+<h3 id="example-3">Example 3</h3>
+<div class="highlight"><pre class="chroma">$$
+1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
+$$</pre></div>
+<p>$$
+1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
+$$</p>
 
         
           <div class="blog-tags">
             
               <a href="https://dnbo.github.io/tags/example/">example</a>&nbsp;
+            
+              <a href="https://dnbo.github.io/tags/math/">math</a>&nbsp;
             
           </div>
         
@@ -221,7 +241,7 @@ This time it must work!?</p>
 
 
 <li>
-    <a href="//twitter.com/share?url=https%3a%2f%2fdnbo.github.io%2fpost%2f2018-06-14-blog-is-live%2f&amp;text=Blog%20is%20live%21&amp;via=username"
+    <a href="//twitter.com/share?url=https%3a%2f%2fdnbo.github.io%2fdummy_content%2f2017-03-05-math-sample%2f&amp;text=Math%20Sample&amp;via=username"
        target="_blank" alt="" title="Share on Twitter">
         <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -244,6 +264,14 @@ This time it must work!?</p>
       
         <ul class="pager blog-pager">
           
+            <li class="previous">
+              <a href="https://dnbo.github.io/dummy_content/2016-03-08-code-sample/" data-toggle="tooltip" data-placement="top" title="Code Sample">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://dnbo.github.io/dummy_content/2017-03-07-bigimg-sample/" data-toggle="tooltip" data-placement="top" title="Big Image Sample">Next Post &rarr;</a>
+            </li>
           
         </ul>
       

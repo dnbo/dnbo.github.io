@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Blog is live!</title>
-  <meta property="og:title" content="Blog is live!" />
-  <meta name="twitter:title" content="Blog is live!" />
-  <meta name="description" content="Let&#39;s get this started!">
-  <meta property="og:description" content="Let&#39;s get this started!">
-  <meta name="twitter:description" content="Let&#39;s get this started!">
+  <title>Code Sample</title>
+  <meta property="og:title" content="Code Sample" />
+  <meta name="twitter:title" content="Code Sample" />
+  <meta name="description" content="Using Hugo or Pygments">
+  <meta property="og:description" content="Using Hugo or Pygments">
+  <meta name="twitter:description" content="Using Hugo or Pygments">
   <meta name="author" content="Daniel Borg"/>
   <link href='https://dnbo.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://dnbo.github.io/img/avatar.png" />
@@ -18,12 +18,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@username" />
   <meta name="twitter:creator" content="@username" />
-  <meta property="og:url" content="https://dnbo.github.io/post/2018-06-14-blog-is-live/" />
+  <meta property="og:url" content="https://dnbo.github.io/dummy_content/2016-03-08-code-sample/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Daniel Borg" />
 
   <meta name="generator" content="Hugo 0.38.2" />
-  <link rel="canonical" href="https://dnbo.github.io/post/2018-06-14-blog-is-live/" />
+  <link rel="canonical" href="https://dnbo.github.io/dummy_content/2016-03-08-code-sample/" />
   <link rel="alternate" href="https://dnbo.github.io/index.xml" type="application/rss+xml" title="Daniel Borg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -166,27 +166,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="post-heading">
-              <h1>Blog is live!</h1>
+            <div class="dummy_content-heading">
+              <h1>Code Sample</h1>
                 
                   
-                    <h2 class="post-subheading">Let&#39;s get this started!</h2>
+                    <h2 class="dummy_content-subheading">Using Hugo or Pygments</h2>
                   
                 
-                
-                  <span class="post-meta">
-  
-  
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on June 14, 2018
-  
-  
-  &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 1 minutes (11 words)
-  
-  
-</span>
-
-
                 
             </div>
           </div>
@@ -201,14 +187,42 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Let&rsquo;s get this going! Test! Again!
-This time it must work!?</p>
+        <p>Hej från Castle Coding!</p>
+
+<p>The following are two code samples using syntax highlighting.</p>
+
+<p>The following is a code sample using triple backticks ( ``` ) code fencing provided in Hugo. This is client side highlighting and does not require any special installation.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">    <span class="kd">var</span> <span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">,</span> <span class="nx">sum</span>
+    <span class="nx">num1</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Enter first number&#34;</span><span class="p">)</span>
+    <span class="nx">num2</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Enter second number&#34;</span><span class="p">)</span>
+    <span class="nx">sum</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">num1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">num2</span><span class="p">)</span> <span class="c1">// &#34;+&#34; means &#34;add&#34;
+</span><span class="c1"></span>    <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Sum = &#34;</span> <span class="o">+</span> <span class="nx">sum</span><span class="p">)</span>  <span class="c1">// &#34;+&#34; means combine into a string
+</span><span class="c1"></span></code></pre></div>
+<p>The following is a code sample using the &ldquo;highlight&rdquo; shortcode provided in Hugo. This is server side highlighting and requires Python and Pygments to be installed.</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">,</span> <span class="nx">sum</span>
+<span class="nx">num1</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Enter first number&#34;</span><span class="p">)</span>
+<span class="nx">num2</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Enter second number&#34;</span><span class="p">)</span>
+<span class="nx">sum</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">num1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">num2</span><span class="p">)</span> <span class="c1">// &#34;+&#34; means &#34;add&#34;
+</span><span class="c1"></span><span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Sum = &#34;</span> <span class="o">+</span> <span class="nx">sum</span><span class="p">)</span>  <span class="c1">// &#34;+&#34; means combine into a string
+</span><span class="c1"></span></code></pre></div>
+
+<p>And here is the same code with line numbers:</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="ln">1</span><span class="kd">var</span> <span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">,</span> <span class="nx">sum</span>
+<span class="ln">2</span><span class="nx">num1</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Enter first number&#34;</span><span class="p">)</span>
+<span class="ln">3</span><span class="nx">num2</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&#34;Enter second number&#34;</span><span class="p">)</span>
+<span class="ln">4</span><span class="nx">sum</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">num1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">num2</span><span class="p">)</span> <span class="c1">// &#34;+&#34; means &#34;add&#34;
+</span><span class="ln">5</span><span class="c1"></span><span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Sum = &#34;</span> <span class="o">+</span> <span class="nx">sum</span><span class="p">)</span>  <span class="c1">// &#34;+&#34; means combine into a string
+</span><span class="ln">6</span><span class="c1"></span></code></pre></div>
 
 
         
           <div class="blog-tags">
             
               <a href="https://dnbo.github.io/tags/example/">example</a>&nbsp;
+            
+              <a href="https://dnbo.github.io/tags/code/">code</a>&nbsp;
             
           </div>
         
@@ -221,7 +235,7 @@ This time it must work!?</p>
 
 
 <li>
-    <a href="//twitter.com/share?url=https%3a%2f%2fdnbo.github.io%2fpost%2f2018-06-14-blog-is-live%2f&amp;text=Blog%20is%20live%21&amp;via=username"
+    <a href="//twitter.com/share?url=https%3a%2f%2fdnbo.github.io%2fdummy_content%2f2016-03-08-code-sample%2f&amp;text=Code%20Sample&amp;via=username"
        target="_blank" alt="" title="Share on Twitter">
         <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -244,6 +258,14 @@ This time it must work!?</p>
       
         <ul class="pager blog-pager">
           
+            <li class="previous">
+              <a href="https://dnbo.github.io/dummy_content/2015-02-26-flake-it-till-you-make-it/" data-toggle="tooltip" data-placement="top" title="Flake it till you make it">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://dnbo.github.io/dummy_content/2017-03-05-math-sample/" data-toggle="tooltip" data-placement="top" title="Math Sample">Next Post &rarr;</a>
+            </li>
           
         </ul>
       
